@@ -1,0 +1,61 @@
+body{
+	font-family: arial;
+background:red;
+}
+
+
+
+h1{
+color: green;
+
+padding:50px;
+font-size: 40px;
+ background: linear-gradient(20deg, red, blue);
+background-image: url("images/caméra.jpeg");
+background-position: center;
+background-size: cover;
+}
+p{
+	text-align: center;
+/*	background-image: url("image/caméra.jpeg");
+	background-position:center;
+	background-size: cover;*/
+
+}
+
+a{
+	text-decoration: none;
+	padding: 20px;
+	background: white;
+    border-radius: 10px;
+
+}
+a:hover {
+	background: green;
+	cursor:pointer;
+}
+
+ol{
+	text-align: left;
+}
+img{
+	width: 200px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px grey;
+  
+}
+
+
+}
+
+
+}
+p{
+	border: 5px solid green;
+	padding: 50px;
+	margin: 100px 50px 50px 50px;
+}
+.icon-blue{
+	color: blue;
+	font-size:34px;
+}
