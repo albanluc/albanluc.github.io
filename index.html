@@ -1,46 +1,236 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title></title>
-<link rel="stylesheet" type="text/css" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum scale=1">
+  <title>Read it</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<h1>Alban-Luc Audebrand</h1>
-<h2>Dev web</h2>
 
-<img src="image/le grand bain.jpeg">
+<nav id="navbar" class="">
+  <div class="nav-wrapper">
+    <!-- Navbar Logo -->
+    <div class="logo">
+      <!-- Logo Placeholder for Inlustration -->
+      <a href="#home"><i></i> Read it </a>
+    </div>
 
-<img src="le grand bain.jpeg">
-
-
-
-
-
-<p>Bienvenue sur le premier site d'un <b>cottorep</b></p>
-
-
-<ul>
-	<li>mon 1er item</li>
-	<li>mon 2eme item</li>
-
-</ul>
-
-
-<p>
-	<a href="http://www.mihivai.com" target="_blank"> Minivai </a>
-	
-</p>
+    <!-- Navbar Liens -->
+    <ul id="menu">
+      <li><a href="#home">Accueil</a></li><!--
+   --><li><a href="#services">Mon compte</a></li><!--
+   --><li><a href="#about">A propos de nous</a></li><!--
+   --><li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/Je3C1hvUCA8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-<div class="box-black">
-	<div class= "box-green">Riri </div>
-	<div class= "box yellow">Fifi</div>
-	<div class ="box-red">loulou</div>
+<!-- Icone Menu -->
+<div class="menuIcon">
+  <span class="icon icon-bars"></span>
+  <span class="icon icon-bars overlay"></span>
 </div>
+
+
+<div class="overlay-menu">
+  <ul id="menu">
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#services">Mon compte</a></li>
+      <li><a href="#about">A propos de nous</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<div id="banner">
+    <h1>Les meilleurs critiques sont les votres.</h1>
+
+		<!-- Bouton modal -->
+		<button type="button" class="btn-medium btn-outline-light" data-toggle="modal" data-target="#exampleModal">Se connecter
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ 		 <div class="modal-dialog" role="document">
+   		 	<div class="modal-content">
+     			 <div class="modal-header">
+       		 		<h5 class="modal-title" id="exampleModalLabel">Connexion</h5>
+        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          					<span aria-hidden="true">&times;</span>
+        				</button>
+     	 		</div>
+      		<div class="modal-body">
+<form>
+ 
+ 		 <div class="form-group">
+    		<label for="exampleInputEmail1">Adresse mail</label>
+   			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer votre email">
+  			<small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre email.</small>
+  		</div>
+
+  		<div class="form-group">
+    		<label for="exampleInputPassword1">Mot de passe</label>
+    		<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+  		</div>
+
+  		<div class="form-group form-check">
+    		<input type="checkbox" class="form-check-input" id="exampleCheck1">
+    		<label class="form-check-label" for="exampleCheck1">Rester connecté</label>
+ 		</div>
+
+  	<button type="submit" class="btn btn-primary">Se connecter</button>
+</form>
+      			</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+      </div>
+
+    		</div>
+  		</div>
+	</div>
+</div>
+
+<!-- Sélection recherche -->
+<div class="section text-center">
+      <h1>Que recherchez-vous ?</h1>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <h3>Film Fantastique</h3>
+              <p>Critiques sur le fantasque</p>
+              <img class="cine-picture" src="http://fr.web.img2.acsta.net/r_1280_720/pictures/18/07/23/12/46/0103261.jpg">
+              <a href="https://www.journaldugeek.com/critique/animaux-fantastiques-crimes-de-grindelwald-critique-complete/" class="btn btn-danger">Découvrir</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <h3>Film culte</h3>
+              <p>Critique de l'ancien</p>
+              <img class="cine-picture" src="https://www.celluloid-angels.com/sites/default/files/jacket/Tontons-Flingueurs-%28les%29.jpg">
+              <a href="https://www.critikat.com/actualite-cine/critique/les-tontons-flingueurs/" class="btn btn-danger">Découvrir</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <h3>Comédie Musicale</h3>
+              <p>Critique de l'harmonie</p>
+              <img class="cine-picture" src="https://is3-ssl.mzstatic.com/image/thumb/Video122/v4/e4/1d/44/e41d4469-caad-121e-cdce-ef86e23e7f32/pr_source.jpg/268x0w.jpg">
+              <a href="https://www.avoir-alire.com/la-la-land-la-critique-du-film" class="btn btn-danger">Découvrir</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card">
+              <h3>Film Horreur</h3>
+              <p>Critique de la peur</p>
+              <img class="cine-picture" src="http://t2.gstatic.com/images?q=tbn:ANd9GcSaHmplLa9Qd0EpASTg3itAeA8HDZkcakjQ3Ya5unRug_qGwO-Z">
+              <a href="https://www.senscritique.com/film/Get_Out/23068056" class="btn btn-danger">Découvrir</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+</div>     
+
+<div class="section text-center">
+<h1>Nos dernières notes</h1>
+</div>      
+
+<!-- Carousel -->
+<div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item"> 
+                <div class="carousel-caption">
+                  <h2>Le Grand bain</h2>
+                  <p>Le Grand Bain: 8/10, excellent. Gilles Lellouche signe une comédie légère et profonde, questionnant sur la place de l'individu dans les cases que la société nous offre. Et par la natation synchronisé, mise dans la case "sport de filles", une bande d'hommes qui se trouvaient au fond de l'eau vont retourner à la surface par un projet commun: le championnat du monde de natation. Gilles Lellouche, joue avec les contracdictions, de femmes viriles au commande d'hommes sensibles, de l'intime au collectif, cette réalisation le place dans le grand bain des grands réalisateurs.</p>
+                </div>
+            </div>
+
+            <div class="item"> 
+                <div class="carousel-caption">
+                  <h2>Okja</h2>
+                  <p>Okja: 3/10, déception. Netflix tente de se dégager de son image neutre, par de beaux plans mais sans  véritable prise de risques, ou réel originalité. Une succession de plans américains rendant l’ interaction entre les acteurs et l’intrigue mortifères. Un bucolisme primaire sans poésie ni spiritualité.Seul point positif, la proposition de Jake Gyllenhaal en sorte de docteur foldingue. Trop peu exploité pour donner du corps au film car le cinéma est par essence l’art du mouvement. </p>
+                </div>
+            </div>
+
+             <div class="item active">  
+                <div class="carousel-caption">
+                  <h2>Bohemian Rhapsody</h2>
+                  <p>Bohemian Rhapsody: 7/10, biopic épique. Dès les premières images, on est rassuré, le film est respectueux mais n'hésite pas à dresser le portrait de son chanteur leader avec suffisamment de justesse et une belle émotion pour qu'on se laisse emporter dans la genèse, la vie,le déclin et la renaissance du Groupe.</p>
+                </div>
+            </div>
+
+            <div class="item"> 
+                <div class="carousel-caption">
+                  <h2>Lola et ses frères</h2>
+                  <p>Lola et ses frères: 6/10, bon moment de divertissement. L'histoire se transforme rapidement en un véritable ballet émotionnel, chaque membre de la fratrie prenant la responsabilité des autres à tour de rôle, en fonction des événements de la vie, tout en prenant bien garde à ne jamais se confronter directement au problème lui-même. Une cartographie familiale des plus attachantes et des plus justes, mais qui se garde toujours du moindre jugement. Jean-Paul Rouve, nous délivre un message de transmission verticale, depuis son dernier film les souvenirs.</p>
+                </div>
+            </div>
+        </div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carouselFade" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+		</a>
+
+		<a class="right carousel-control" href="#carouselFade" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+		</a>
+
+</div>
+
+
+<!-- Formulaire -->
+<div class="form">
+
+	<h2>Bonjour!</h2>
+	<h2>Souscrivez à notre newsletter</h2>
+	<h2>Pas de dérangements, donc pas de spam</h2>
+	<h2>Vous recevrez les critiques des avants premières presses</h2>
+
+		 <form action="#" method="post">
+		      <input type="text" name="email" placeholder="Type your email">
+		      <input type="submit" name="submit" value="Souscrire">
+		 </form>
+</div>     
+
+
+<!-- Bas de page -->
+<div id="footer">
+    <ul class="list-inline network">
+      <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a></li>
+      <li><a href="https://www.pinterest.fr/"><i class="fab fa-pinterest-square"></i></a></li>
+      <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+    </ul>
+
+<div class="name">
+<p>©Read It</p> 
+</div>    
+</div>    
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 
 </body>
